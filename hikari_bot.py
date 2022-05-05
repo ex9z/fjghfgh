@@ -1,10 +1,9 @@
 import hikari
 import lightbulb
 import random
-import discord
 
 bot = lightbulb.BotApp(
-    token='OTM0NTMzMDgyODMxMjYxNzE2.YexdwQ.97tDhzHnk3uQj3uPis99dzAczUI'
+    token='your token'
 )
 
 
@@ -14,7 +13,7 @@ async def on_started(event):
 
 
 @bot.command
-@lightbulb.command('wwwww', 'dddddd')
+@lightbulb.command('just a command', 'description')
 @lightbulb.implements(lightbulb.SlashCommand)
 async def gsfsf(ctx):
     await ctx.respond('222222')
@@ -31,8 +30,8 @@ async def rand(ctx):
 
 
 @bot.command
-@lightbulb.option('text', 'naprimer : daun , lox , awopawaw , ...')
-@lightbulb.command('randomnie_slova', 'xd')
+@lightbulb.option('text', 'example : apple , banana , awopawaw , ...')
+@lightbulb.command('random-words', 'hehe')
 @lightbulb.implements(lightbulb.SlashCommand)
 async def ball(ctx):
     res = ctx.options.text.split(' , ' and ', ' and ',' and ' ,')
